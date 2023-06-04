@@ -1,9 +1,9 @@
 #! /bin/sh
 grep -v ">" sequence.fasta > temp && mv temp sequence.fasta.txt 
-grep -o 'T' sequence.fasta | wc -l >> T_file.txt
-grep -o 'A' sequence.fasta | wc -l >> A_file.txt
-grep -o 'G' sequence.fasta | wc -l >> G_file.txt
-grep -o 'C' sequence.fasta | wc -l >> C_file.txt
+grep -o 'T' sequence.fasta.txt | wc -l >> T_file.txt
+grep -o 'A' sequence.fasta.txt | wc -l >> A_file.txt
+grep -o 'G' sequence.fasta.txt | wc -l >> G_file.txt
+grep -o 'C' sequence.fasta.txt | wc -l >> C_file.txt
 
 
 
